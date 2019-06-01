@@ -1,0 +1,36 @@
+
+button.btn-style {
+  width: 75%;
+  height: 5vh;
+  background-color: #6172e6;
+  margin-top: 3rem;
+}
+
+form {
+  display: flex;
+   justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+  margin: 3rem;
+}
+
+div.container {
+  padding: 3rem;
+  margin: auto;
+  margin-top: 5rem;
+  text-align: center;
+  width: 400px;
+  border: 1px solid #eee;
+  box-shadow: 3px 4px #eee;
+}
+
+div.form-input {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+label.label-margin {
+  margin-bottom: 0.5rem;
+}

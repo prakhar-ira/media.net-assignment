@@ -1,0 +1,28 @@
+<div class="search-bar">
+  <img src="../../assets/search.png" alt="Search books">
+  <input type="text" placeholder="Search books" name="books" class="input-align" #searchBooks>
+</div>
+<hr>
+<h2 class="header-title"> All books </h2>
+<div class="block-row">
+    <div class="block white" *ngFor="let book of dummyBooks; let i = index">
+      <div class="card-header">
+          <div class="header-element">
+            <img [src]="imageSource" (click)="addToFavourites(book, $event.target)" alt="Add favourite">Add to favoutites
+          </div>
+          <div class="header-element2">
+            <img src="../../assets/delete.png" class="delete-student" (click)="deleteBook(i)" alt="Delete">
+          </div>
+      </div>
+      <img src="../../assets/book dummy.png" class="book-dummy" alt="Dummy book">
+      <h5 class="text-title">{{ book?.name }}</h5>
+      <div class="footer">
+        <div class="author">
+            <span class="author-text">By {{ book?.author }}</span>
+        </div>
+        <div class="price">
+            <span class="price-text">{{ book?.price }}</span>
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="search-bar">
+  <img src="../../assets/search.png" alt="Search favourites">
+    <input type="text" placeholder="Search favourites" name="favourites" class="input-align" #searchFavourites>
+</div>
+<h2 class="header-title">Favourites </h2>
+<div class="block-row">
+    <div class="block white" *ngFor="let favourite of dummyFavourites; let i = index">
+      <img src="../../assets/cancel.png" style="float: right;"  (click)="deleteFavourite(i)" alt="Delete">
+      <img src="../../assets/book dummy.png" class="book-dummy" alt="Dummy book">
+      <h5 class="text-title">{{ favourite?.name }}</h5>
+      <div class="footer">
+        <div class="author">
+            <span class="author-text">By {{ favourite?.author }}</span>
+        </div>
+        <div class="price">
+            <span class="price-text">{{ favourite?.price }}</span>
+        </div>
+      </div>
+    </div>
+</div>

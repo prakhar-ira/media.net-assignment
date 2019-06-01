@@ -1,0 +1,20 @@
+<div class="container">
+  <h3>Add book</h3>
+  <hr>
+  <form [formGroup]="addBookForm" *ngIf="addBookForm" (submit)="submit(addBookForm?.value, addBookForm?.valid)">
+
+    <div class="form-input">
+      <label class="label-margin">Book name</label>
+      <input type="text" formControlName="name" class="form-control" />
+    </div>
+    <div class="form-input">
+      <label class="label-margin">Book author</label>
+      <input type="text" formControlName="author" class="form-control" />
+    </div>
+    <div class="form-input">
+      <label class="label-margin">Book price</label>
+      <input type="text" formControlName="price" class="form-control" />
+    </div>
+    <button type="submit" class="btn-style">Submit</button>
+  </form>
+</div>

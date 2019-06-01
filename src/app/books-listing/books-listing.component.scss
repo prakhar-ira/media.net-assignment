@@ -1,0 +1,79 @@
+div.block-row {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: wrap;
+  div.block:first-child {
+    margin-left: 0px;
+  }
+  div.block:last-child {
+    margin-right: 0px;
+  }
+}
+div.block {
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0.25rem 1rem;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  border-radius: 0.5rem;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  &.white {
+    background: #fff;
+  }
+}
+
+div.card-header {
+  display: flex;
+  width: 200px;
+  font-size: 10px;
+  div.header-element {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+}
+
+img.delete-student {
+  flex: 1;
+  float: right;
+}
+
+img.book-dummy {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  margin-right: 1rem;
+  background-color: #e2e7ff;
+}
+
+span.author-text {
+color: #a09a98
+}
+
+span.price-text {
+  color: #080505;
+  font-weight: 700;
+}
+h5.text-title {
+  color: #33a2ce;
+  margin-bottom: 0.5rem;
+}
+
+input.input-align {
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+h2.header-title {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+div.footer {
+  display: flex;
+  div.author {
+    flex: 1;
+  }
+}

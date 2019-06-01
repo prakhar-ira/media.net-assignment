@@ -1,0 +1,20 @@
+<ul>
+  <img src="../../assets/Bitmap.png" class="book-depository" alt="book-depository">
+  <li>
+    <a [routerLink]="['/add']" [routerLinkActive]="'active'">
+      <img src="../../assets/add books default.png" class="image-logo" alt="Add book">
+      Add Books</a></li>
+  <li>
+    <a [routerLink]="['/list']" [routerLinkActive]="'active'">
+      <img src="../../assets/books.png" class="image-logo" alt="List book">
+      Books <span class="numberCircle">{{ booksCount }}</span></a></li>
+  <li>
+    <a [routerLink]="['/favourite']" [routerLinkActive]="'active'">
+      <img src="../../assets/like.png" class="image-logo" alt="Favourite book">
+      Favourites  <span class="numberCircle">{{ favouritesCount }}</span></a></li>
+  <img src="../../assets/bg left.png" class="background-left" alt="bg-left">
+</ul>
+<div class="container">
+<router-outlet></router-outlet>
+</div>
+
