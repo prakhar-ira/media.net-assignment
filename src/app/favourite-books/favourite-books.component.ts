@@ -28,7 +28,8 @@ dummyFavourites: any;
   constructor() { }
 
   deleteFavourite(i) {
-    this.dummyFavourites.splice(i, 1);
+    this.favourites.splice(i, 1);
+    this.dummyFavourites = [...this.favourites];
     localStorage.setItem('favorites', JSON.stringify(this.favourites));
     alert('Favourite removed!! Please refresh to see the count');
   }

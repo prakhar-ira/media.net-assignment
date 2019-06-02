@@ -53,7 +53,8 @@ export class BooksListingComponent implements OnInit {
   }
 
   deleteBook(i) {
-    this.dummyBooks.splice(i, 1);
+    this.books.splice(i, 1);
+    this.dummyBooks = [...this.books];
     localStorage.setItem('books', JSON.stringify(this.books));
     alert('Book deleted!!');
     this.ngOnInit();
