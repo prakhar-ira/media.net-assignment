@@ -62,9 +62,9 @@ export class BooksListingComponent implements OnInit {
 
   ngOnInit() {
     this.searchBooks();
-    this.books = JSON.parse(localStorage.getItem('books'));
+    this.books = JSON.parse(localStorage.getItem('books')) || [];
     this.dummyBooks = [...this.books];
-    this.favourites = JSON.parse(localStorage.getItem('favorites'));
+    this.favourites = JSON.parse(localStorage.getItem('favorites')) || [];
     this.books.forEach(book => {
        this.favourites.forEach(favourite => {
       return this.imageSource = favourite.name === book.name

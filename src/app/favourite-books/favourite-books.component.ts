@@ -47,7 +47,7 @@ dummyFavourites: any;
   }
 
   ngOnInit() {
-    this.favourites = JSON.parse(localStorage.getItem('favorites'));
+    this.favourites = JSON.parse(localStorage.getItem('favorites')) || [];
     this.dummyFavourites = [...this.favourites];
   }
 

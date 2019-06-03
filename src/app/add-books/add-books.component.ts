@@ -37,7 +37,7 @@ export class AddBooksComponent implements OnInit {
   }
 
   ngOnInit() {
-     this.books = JSON.parse(localStorage.getItem('books'));
+     this.books = JSON.parse(localStorage.getItem('books')) || [];
   }
 
 }
